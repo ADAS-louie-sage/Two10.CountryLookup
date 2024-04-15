@@ -24,6 +24,9 @@ Console.WriteLine(ocean.Name); // "North Atlantic Ocean"
 
 Creating a ReverseLookup object is expensive, so it's worth keeping it as a singleton.
 
+## Note
+This is an update to the repo for usage with .NET 8.
+
 ## License
 
 MIT
