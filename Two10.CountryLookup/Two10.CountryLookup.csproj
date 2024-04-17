@@ -2,18 +2,24 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <OutputType>Library</OutputType>
-    <AssemblyName>Two10.CountryLookupADAS</AssemblyName>
+    <AssemblyName>ADAS.CountryLookup</AssemblyName>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <AssemblyTitle>Two10.CountryLookupADAS</AssemblyTitle>
     <Description>Lookup a country by lat/lng coordinates</Description>
     <Company>ADAS</Company>
-    <Product>Two10.CountryLookup</Product>
+    <Product>ADAS.CountryLookup</Product>
     <Copyright>Copyright ©  2015</Copyright>
-    <AssemblyVersion>1.0.7.0</AssemblyVersion>
-    <FileVersion>1.0.7.0</FileVersion>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>    <Version>$(AssemblyVersion)</Version>    <Authors>Two10, ADAS</Authors>    <PackageReadmeFile>readme.md</PackageReadmeFile>
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="region-list.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />

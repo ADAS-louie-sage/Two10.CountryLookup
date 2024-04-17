@@ -1,12 +1,6 @@
-# Two10.CountryLookup
+# ADAS.CountryLookup
 
-[![Build status](https://ci.appveyor.com/api/projects/status/jufukg89x92nh5v2?svg=true)](https://ci.appveyor.com/project/richorama/two10-countrylookup)
-
-## Installation
-
-```
-> Install-Package Two10.CountryLookup
-```
+This is a migrated version of the Two10.CountryLookup package which is compatible with .net 8. The original package can be found here: https://github.com/two10degrees/Two10.CountryLookup
 
 ## Usage
 
@@ -19,11 +13,6 @@ var ocean = lookup.Lookup(0.0f, 0.0f);
 Console.WriteLine(ocean.Name);
 
 ```
-
-Creating a ReverseLookup object is expensive, so it's worth keeping it as a singleton.
-
-## Note
-This is an update to the repo for usage with .NET 8.
 
 ## License
 
