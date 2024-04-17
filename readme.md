@@ -13,12 +13,10 @@
 ```c#
 var lookup = new ReverseLookup();
 
-// look up a country by lat / lng
-var country = lookup(52.0, 2.0);
-Console.WriteLine(country.Name); // "United Kingdon"
-
-var ocean = lookup(0,0);
-Console.WriteLine(ocean.Name); // "North Atlantic Ocean"
+var country = lookup.Lookup(55.3781f, -3.4360f);
+Console.WriteLine(country.Name);
+var ocean = lookup.Lookup(0.0f, 0.0f);
+Console.WriteLine(ocean.Name);
 
 ```
 
